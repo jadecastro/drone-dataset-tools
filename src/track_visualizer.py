@@ -35,7 +35,7 @@ class TrackVisualizer(object):
             self.ids_for_frame[i_frame] = indices
 
         # Initialize variables
-        self.current_frame = 0
+        self.current_frame = config["initial_frame"]
         self.changed_button = False
         self.rect_map = {}
         self.plotted_objects = []

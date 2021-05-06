@@ -54,6 +54,9 @@ def create_args():
     config_specification.add_argument('--showAgeLabel', default=False,
                                       help="Optional: decide whether to show the current age of the track the text annotation.",
                                       type=bool)
+    config_specification.add_argument('--initial_frame', default=0,
+                                      help="Optional: the initial frame to plot.",
+                                      type=int)
 
     parsed_config_specification = vars(config_specification.parse_args())
     return parsed_config_specification
